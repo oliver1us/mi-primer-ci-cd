@@ -12,9 +12,13 @@ jobs:
     - name: Detect branch
       run: |
         echo "Rama actual: ${{ github.ref_name }}"
+    - name: Detect OS version
+      run: |
+        echo "Imprimiendo la version de Sistema Operativo:"
+        cat /etc/os-release
   
   job2:
-    runs-on: ubuntu:22.04
+    runs-on: ubuntu-22.04
     steps:
     - name: OS version
       run: |
