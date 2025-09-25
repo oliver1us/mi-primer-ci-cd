@@ -2,7 +2,7 @@ name: Rama Detectada
 
 on:
   push:
-    branches: [main, develop, feature/*]
+    branches: [main, staging, feature/*]
   workflow_dispatch:
 
 jobs:
